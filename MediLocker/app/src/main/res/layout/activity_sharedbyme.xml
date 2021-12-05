@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharedbyme">
+
+    <include
+        android:id="@+id/includeTollsharedbyme"
+        layout="@layout/simple_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/linearlayoutsharedbyme"
+        android:paddingTop="65dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_black"
+            android:textSize="18sp"
+            android:paddingStart="15dp"
+            android:text="Share Records"
+            android:textColor="@color/colorPrimaryDark"
+            />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:paddingStart="15dp"
+            android:id="@+id/emailshare"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/input"
+            android:hint="Enter Email"
+            android:textSize="18dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginLeft="15dp"
+            android:gravity="center"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:textSize="14dp"
+            android:id="@+id/sharebtn"
+            android:textColor="#fff"
+            android:background="@drawable/linearbtn"
+            android:fontFamily="@font/roboto_black"
+            android:text="SHARE"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="5dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@id/linearlayoutsharedbyme"
+        android:id="@+id/view11"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:id="@+id/nodatasharedbymelinearlayout"
+        android:gravity="center"
+        android:layout_below="@id/view11">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_sentiment_satisfied_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="Still You haven't shared data with anyone!"
+            android:textColor="#000"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view11"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:id="@+id/userrelativelayou"
+        android:layout_marginTop="5dp">
+
+    <TextView
+        android:id="@+id/sharedusers1111"
+        android:layout_width="match_parent"
+        android:layout_height="24dp"
+
+        android:gravity="start|center_vertical"
+
+        android:textSize="16dp"
+        android:visibility="gone"
+
+        android:textColor="#888888"
+        android:fontFamily="@font/roboto_black"
+        android:text="Shared with Users"/>
+
+        <ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:id="@+id/infosharedbyme"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/ic_info_outline_black_24dp"
+            />
+
+    </RelativeLayout>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclersharedbyme"
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/userrelativelayou" />
+
+</RelativeLayout>

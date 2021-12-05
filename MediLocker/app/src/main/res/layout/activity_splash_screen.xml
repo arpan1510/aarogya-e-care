@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_height="match_parent"
+    android:background="@drawable/bluegradient"
+    tools:context=".SplashScreen"
+    android:gravity="center">
+    <!--    android:background="#1d1160"-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center">
+
+
+
+            <ImageView
+                android:id="@+id/logo_image"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:src="@drawable/blackwhite" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/questrial_regular"
+                android:gravity="start"
+                android:letterSpacing="0.05"
+                android:text="Aarogya E Care"
+                android:textColor="#fff"
+                android:textSize="27dp"
+                android:textStyle="bold" />
+    </LinearLayout>
+
+
+
+        <TextView
+            android:id="@+id/quotes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="60dp"
+            android:fontFamily="@font/questrial_regular"
+            android:gravity="center"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:paddingRight="45dp"
+            android:paddingLeft="45dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginTop="50dp"
+            android:letterSpacing="0.01"
+            android:text="some quotes here"
+            android:textColor="#fff"
+            android:textSize="14dp"
+            />
+
+<!--        <ImageView-->
+<!--            android:id="@+id/imageView3"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="10dp"-->
+<!--            android:layout_marginTop="125dp"-->
+<!--            android:fitsSystemWindows="true"-->
+<!--            android:src="@drawable/linear"-->
+<!--            app:layout_constraintBottom_toBottomOf="@+id/gifImageView"-->
+<!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+<!--        <pl.droidsonroids.gif.GifImageView-->
+<!--            android:id="@+id/gifImageView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:padding="25dp"-->
+<!--            android:src="@drawable/gif"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            tools:layout_editor_absoluteX="15dp" />-->
+<!--        <ImageView-->
+<!--            android:id="@+id/gifImageView"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="120dp"-->
+<!--            android:layout_margin="25dp"-->
+<!--            android:src="@drawable/aarogyalogo"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            />-->
+
+
+</RelativeLayout>

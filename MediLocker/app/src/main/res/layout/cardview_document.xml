@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@drawable/document_border">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/cardfiletypeimg"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:src="@drawable/ic_image_black_24dp"
+                />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:orientation="horizontal">
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/cardfilename"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginStart="6dp"
+                        android:ellipsize="marquee"
+                        android:fontFamily="sans-serif-medium"
+                        android:gravity="center"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:padding="15dp"
+                        android:singleLine="true"
+                        android:text="Document.jpg"
+                        android:textColor="#000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/carddropdown"
+                        app:layout_constraintHorizontal_bias="0.502"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="1.0" />
+
+                    <ImageView
+                        android:id="@+id/carddropdown"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:padding="10dp"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:src="@drawable/menu_vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginRight="18dp"
+                android:layout_marginLeft="18dp"
+                android:orientation="horizontal">
+
+
+                <TextView
+                    android:id="@+id/carddate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:text="2018-06-01 04:25:17"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="13sp"
+                    android:maxLength="10"
+                    android:fontFamily="@font/ubuntu_bold"/>
+
+                <TextView
+                    android:id="@+id/cardrecordtype"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:text="REPORT"
+                    android:textColor="#fff"
+                    android:gravity="center"
+                    android:textSize="13sp"
+
+                    android:layout_marginLeft="75dp"
+                    android:fontFamily="@font/ubuntu_bold"/>
+
+                <TextView
+                    android:id="@+id/cardsize"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:text="25MB"
+                    android:gravity="center_vertical"
+                    android:textColor="#fff"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/ubuntu_bold"/>
+
+
+
+            </RelativeLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

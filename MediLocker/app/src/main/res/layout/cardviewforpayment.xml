@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+
+    android:layout_height="wrap_content"
+    android:layout_marginRight="8dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginTop="4dp"
+    android:elevation="15dp"
+    app:cardCornerRadius="10dp"
+    android:layout_marginBottom="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/pimagegreen"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_payment_black_24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/orderid"
+                        app:layout_constraintHorizontal_bias="0.49"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/pimagered"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_payment_red_24dp"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/orderid"
+                        app:layout_constraintHorizontal_bias="0.49"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <TextView
+                        android:id="@+id/orderid"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:ellipsize="marquee"
+                        android:fontFamily="@font/roboto_black"
+                        android:marqueeRepeatLimit="marquee_forever"
+                        android:paddingTop="15dp"
+                        android:gravity="center"
+                        android:layout_marginRight="50dp"
+                        android:layout_marginLeft="50dp"
+                        android:paddingBottom="15dp"
+                        android:singleLine="true"
+                        android:text="ORDS06092020"
+                        android:textColor="#000"
+                        android:textSize="17dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/pimage1arrowdown"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.49"
+                        app:layout_constraintStart_toEndOf="@id/orderid"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                    <ImageView
+                        android:id="@+id/pimage1arrowup"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:visibility="gone"
+                        android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.49"
+                        app:layout_constraintStart_toEndOf="@id/orderid"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintVertical_bias="0.5" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:id="@+id/daterelativepayment"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Date of Transaction :"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="2020-09-06"
+                android:paddingLeft="15dp"
+                android:maxLength="10"
+                android:id="@+id/dateofpayment"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:id="@+id/payablerelativepayment"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payable :"
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="100"
+                android:paddingLeft="15dp"
+                android:id="@+id/payableofpayment"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:id="@+id/storagerelativepayment"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storage bought : "
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="250 MB"
+                android:paddingLeft="15dp"
+                android:id="@+id/storageofpayment"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+          android:visibility="gone"
+            android:layout_width="match_parent"
+            android:paddingBottom="12dp"
+            android:id="@+id/statusrelativepayment"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transaction status : "
+                android:paddingLeft="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#000"
+                android:layout_alignParentLeft="true"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PAID"
+                android:paddingLeft="15dp"
+                android:id="@+id/statusofpaymentpass"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#00D837"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="FAILED"
+                android:visibility="gone"
+                android:paddingLeft="15dp"
+                android:id="@+id/statusofpaymentfail"
+                android:paddingRight="15dp"
+                android:paddingTop="5dp"
+                android:fontFamily="@font/roboto_black"
+                android:textColor="#C50000"
+                android:layout_alignParentRight="true"
+                android:paddingBottom="5dp"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

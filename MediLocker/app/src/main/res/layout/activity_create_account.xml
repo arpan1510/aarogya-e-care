@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".CreateAccount">
+    <include
+        android:id="@+id/first_page_toolbar"
+        layout="@layout/simple_toolbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+    </include>
+
+    <TextView
+        android:id="@+id/create_account_head"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/questrial_regular"
+        android:gravity="center"
+        android:letterSpacing="0.05"
+        android:text="Create Account"
+        android:visibility="gone"
+        android:textAllCaps="false"
+        android:textColor="#000000"
+        android:textColorHint="@android:color/darker_gray"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/first_page_toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/relativeLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toTopOf="@+id/create_account_btn"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/first_page_toolbar">
+
+
+        <EditText
+            android:id="@+id/create_account_email_input"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:fontFamily="sans-serif-medium"
+            android:hint="Email"
+            android:inputType="textEmailAddress"
+            android:padding="12dp"
+            android:textAllCaps="false"
+            android:textColor="#000000"
+            android:textColorHint="@android:color/darker_gray"
+            android:textSize="14dp" />
+
+        <LinearLayout
+            android:id="@+id/frame_contact"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_below="@+id/create_account_email_input"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:orientation="horizontal">
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccp"
+                android:layout_width="105dp"
+                android:layout_height="match_parent"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_defaultNameCode="IN"
+                app:ccp_showFlag="false"
+                app:ccp_showNameCode="true" />
+
+            <EditText
+                android:id="@+id/contact_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="start"
+                android:hint="Mobile Number"
+                android:inputType="number"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+
+        </LinearLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_create_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_contact">
+
+            <EditText
+                android:id="@+id/create_account_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/pvisibility"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_margin="15dp"
+                android:background="@drawable/eye_black" />
+
+            <ImageView
+                android:id="@+id/pvisibilityoff"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_margin="15dp"
+                android:background="@drawable/ic_visibility_off_black_24dp"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/frame_confirm_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_create_password">
+
+            <EditText
+                android:id="@+id/create_account_confirm_password_input"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Confirm Password"
+                android:inputType="textPassword"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <ImageView
+                android:id="@+id/cpvisibility"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_margin="15dp"
+                android:background="@drawable/eye_black" />
+
+            <ImageView
+                android:id="@+id/cpvisibilityoff"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="end|center_vertical"
+                android:layout_margin="15dp"
+                android:background="@drawable/ic_visibility_off_black_24dp"
+                android:visibility="invisible" />
+
+        </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/linear_layout_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/frame_confirm_password"
+            android:layout_margin="10dp"
+            android:orientation="horizontal">
+
+            <com.suke.widget.SwitchButton
+                android:id="@+id/switch_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="6dp"
+                android:layout_marginTop="6dp"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="I accept the"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <TextView
+                android:id="@+id/terms_services"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="6dp"
+                android:textColor="#1f1160"
+                android:layout_marginBottom="6dp"
+                android:fontFamily="@font/roboto_black"
+                android:text="Terms of Service"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/create_account_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linearbtn"
+        android:fontFamily="@font/roboto_black"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+        android:padding="12dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:text="Create Account"
+        android:textAllCaps="false"
+        android:textColor="#ffffff"
+        android:textSize="14dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

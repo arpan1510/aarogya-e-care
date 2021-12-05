@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<!--    <item-->
+<!--        android:id="@+id/nav_track"-->
+<!--        android:icon="@drawable/ic_tracker"-->
+<!--        android:title="Tracker"-->
+<!--        android:visible="true"/>-->
+
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@drawable/outline_home"
+        android:title="Home"
+        app:cnb_iconColor="@color/colorPrimaryDark"
+        android:visible="true" />
+    <item
+        android:id="@+id/nav_records"
+        android:icon="@drawable/outline_document"
+        app:cnb_iconColor="@color/colorAccent"
+        android:title="Records" />
+    <item
+        android:id="@+id/nav_blogs"
+        app:cnb_iconColor="@android:color/holo_orange_dark"
+        android:icon="@drawable/outline_blogs"
+        android:title="Blogs"
+        />
+    <item
+        android:id="@+id/nav_notifications"
+        app:cnb_iconColor="@android:color/holo_blue_light"
+        android:icon="@drawable/outline_notifications"
+        android:title="Notification"
+        />
+
+
+</menu>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".addfamilymember">
+
+    <include
+        android:id="@+id/add_toolbar"
+        layout="@layout/simple_toolbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="25dp"
+        android:layout_marginBottom="25dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_toolbar">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="150dp"
+                android:src="@drawable/addfamilymember"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/questrial_regular"
+                android:padding="18dp"
+                android:visibility="gone"
+                android:text="Add Family Member"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                android:textSize="25dp" />
+
+            <EditText
+                android:id="@+id/first_name_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:hint="First Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/last_name_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_name_details"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/birthdate_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last_name_details"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:fontFamily="@font/roboto_black"
+                android:hint="Date Of Birth"
+                android:inputType="date"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spinner1_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthdate_details"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:paddingStart="5dp"
+                android:spinnerMode="dropdown"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spinner2_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:paddingStart="5dp"
+                android:spinnerMode="dropdown"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/realation_add"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last_name_details"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:hint="Relation"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+
+            <TextView
+                android:id="@+id/submit_add_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/linearbtn"
+                android:fontFamily="@font/roboto_black"
+                android:gravity="center"
+                android:padding="15dp"
+                android:text="Add Member"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

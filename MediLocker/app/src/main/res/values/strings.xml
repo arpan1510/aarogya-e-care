@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">MediLocker</string>
+
+    <string name="navigation_drawerOpen">Open navigation drawer</string>
+    <string name="navigation_drawerClose">Close navigation drawer</string>
+    <string name="app_name2">Aarogya E Care</string>
+    <string name="terms_conditions"><![CDATA[Terms & Conditions]]></string>
+
+
+</resources>

@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".CreateAccount">
+
+    <include
+        android:id="@+id/save_details_toolbar"
+        layout="@layout/simple_toolbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        app:layout_constraintTop_toTopOf="parent">
+    </include>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:fillViewport="true"
+        android:scrollbars="none"
+        android:layout_below="@+id/save_details_toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:padding="7dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/questrial_regular"
+                android:gravity="start"
+                android:padding="18dp"
+                android:text="Profile Details"
+                android:textColor="@android:color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/first_name_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="First Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/last_name_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/first_name_details"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Last Name"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <EditText
+                android:id="@+id/birthdate_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/last_name_details"
+                android:layout_marginBottom="12dp"
+                android:clickable="true"
+                android:focusable="false"
+                android:fontFamily="sans-serif-medium"
+                android:hint="Date Of Birth"
+                android:inputType="date"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spinner1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/birthdate_details"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:paddingStart="5dp"
+                android:spinnerMode="dropdown"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <Spinner
+                android:id="@+id/spinner2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner1"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/roboto_black"
+                android:paddingStart="5dp"
+                android:spinnerMode="dropdown"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="16sp" />
+
+            <EditText
+                android:id="@+id/address_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spinner2"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="sans-serif-medium"
+                android:hint="City"
+                android:inputType="text"
+                android:padding="12dp"
+                android:textAllCaps="false"
+                android:textColor="#000000"
+                android:textColorHint="@android:color/darker_gray"
+                android:textSize="14dp" />
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/ccpcountry"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:ccp_showFullName="true"
+                app:ccp_showNameCode="false"
+                app:ccp_showPhoneCode="false" />
+
+            <TextView
+                android:id="@+id/submitdetails_btn"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/linearbtn"
+                android:fontFamily="@font/roboto_black"
+                android:foreground="?android:attr/selectableItemBackground"
+                android:gravity="center"
+                android:padding="12dp"
+                android:text="Submit"
+                android:textAllCaps="false"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="parent"
+                tools:layout_editor_absoluteX="10dp" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

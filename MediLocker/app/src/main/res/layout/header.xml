@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="bottom"
+    android:layout_gravity="start"
+    android:scrollbars="none"
+    android:id="@+id/header_layout">
+
+    <LinearLayout
+        android:id="@+id/forbelow"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:gravity="start"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingTop="15dp"
+        android:layout_gravity="start"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clickable="true"
+            android:focusable="true"
+            android:orientation="horizontal">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="8dp"
+                    android:orientation="vertical"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginStart="12dp">
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="top"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:id="@+id/welcome"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Welcome,"
+                            android:paddingLeft="8dp"
+                            android:textColor="#ffff"
+                            android:fontFamily="@font/roboto_black"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+                        <TextView
+                            android:id="@+id/user_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="User"
+                            android:paddingLeft="10dp"
+                            android:textColor="#ffff"
+                            android:fontFamily="@font/roboto_black"
+                            android:textSize="22dp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/type"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/roboto_black"
+                        android:textSize="15dp"
+                        android:layout_marginTop="10dp"
+                        android:padding="7dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Free"
+                        android:background="@drawable/input"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:layout_marginEnd="0dp"
+                        android:textAllCaps="false"
+                        android:textStyle="bold"
+                        android:letterSpacing="0.03"
+                        android:textColor="@color/colorPrimaryDark" />
+                </LinearLayout>
+<!--                <LinearLayout-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_marginEnd="15dp"-->
+<!--                    android:layout_marginStart="15dp"-->
+<!--                    android:clickable="true"-->
+<!--                    android:focusable="true"-->
+<!--                    android:gravity="end"-->
+<!--                    >-->
+<!--                    <ImageView-->
+<!--                        android:id="@+id/setting"-->
+<!--                        android:layout_width="wrap_content"-->
+<!--                        android:layout_height="wrap_content"-->
+<!--                        android:src="@drawable/ic_settings"-->
+<!--                        android:foreground="?android:attr/selectableItemBackground"-->
+<!--                        android:padding="10dp"-->
+<!--                        />-->
+<!--                </LinearLayout>-->
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp"
+        android:padding="5dp"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="12dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Phone No. :"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="16dp"
+        android:layout_marginStart="3dp"
+        android:layout_marginBottom="8dp"
+        android:textColor="#ffff"
+        android:textStyle="bold"/>
+    <TextView
+        android:id="@+id/phone_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 6353171381"
+        android:paddingStart="10dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="16dp"
+        android:textColor="#ffff"
+        />
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:background="#fff"
+        android:padding="10dp"
+        android:id="@+id/storagedetailslinearlayout"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/progresspercent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Storage"
+                android:layout_marginLeft="12dp"
+                android:textSize="14dp"
+                android:textColor="#000"
+                android:fontFamily="@font/roboto_black"/>
+<!--            <LinearLayout-->
+<!--                android:layout_width="match_parent"-->
+<!--                android:gravity="end"-->
+<!--                android:clickable="true"-->
+<!--                android:focusable="true"-->
+<!--                android:paddingEnd="12dp"-->
+<!--                android:layout_height="wrap_content">-->
+<!--                <ImageView-->
+<!--                    android:layout_width="20dp"-->
+<!--                    -->
+<!--                    android:src="@drawable/baseline_more"-->
+<!--                    android:layout_height="20dp"/>-->
+<!--            </LinearLayout>-->
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressbarstorage"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/progressvalue"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="12dp"
+            android:layout_height="wrap_content"
+            android:text="Storage"
+            android:textSize="14dp"
+            android:textColor="#555"
+            android:fontFamily="@font/roboto_black"/>
+
+
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buystorage"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:layout_marginLeft="12dp"
+        android:layout_height="wrap_content"
+        android:text="BUY STORAGE"
+        android:textSize="14dp"
+        android:textColor="@color/colorAccent"
+        android:fontFamily="@font/roboto_black"/>
+
+    <LinearLayout
+        android:id="@+id/upgrade_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/linear"
+        android:clickable="true"
+        android:focusable="true"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:gravity="center"
+         >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Upgrade to Premium"
+            android:gravity="center"
+            android:padding="10dp"
+            android:layout_gravity="center_vertical"
+            android:fontFamily="@font/questrial_regular"
+            android:textStyle="bold"
+            android:textSize="16dp"
+            android:textColor="@android:color/white"
+            />
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:padding="10dp"
+            android:src="@drawable/crown"
+            android:contentDescription="Crown" />
+    </LinearLayout>
+
+<!--    <LinearLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginBottom="1dp"-->
+<!--        android:padding="5dp"-->
+<!--        android:layout_marginStart="7dp">-->
+
+<!--        <TextView-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="MediLocker Id : "-->
+<!--            android:fontFamily="@font/ubuntu_light"-->
+<!--            android:textSize="18sp"-->
+<!--            android:textColor="#ffff"-->
+<!--            android:textStyle="bold"/>-->
+<!--        <TextView-->
+<!--            android:id="@+id/ml_id"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:text="ML-GJ-123456"-->
+<!--            android:paddingStart="10dp"-->
+<!--            android:textSize="18sp"-->
+<!--            android:fontFamily="@font/ubuntu_bold"-->
+<!--            android:textColor="#ffff"/>-->
+<!--    </LinearLayout>-->
+</LinearLayout>

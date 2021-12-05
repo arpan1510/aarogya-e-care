@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".sharedwithme">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/nodatalinearlayout"
+        android:gravity="center"
+        android:layout_below="@id/includeTollsharedwithme">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_sentiment_satisfied_black_24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="16dp"
+            android:fontFamily="@font/roboto_black"
+            android:text="No User Have Shared Data With You"
+            android:textColor="#000"
+            android:padding="15dp"/>
+
+    </LinearLayout>
+
+    <include
+        android:id="@+id/includeTollsharedwithme"
+        layout="@layout/simple_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#888888"
+        android:text="Users"
+        android:padding="10dp"
+        android:fontFamily="@font/roboto_black"
+        android:textSize="16dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:id="@+id/texttt"
+        android:visibility="gone"
+        android:layout_below="@id/includeTollsharedwithme"/>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:visibility="gone"
+        android:id="@+id/recyclersharedwithme"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/texttt" />
+
+
+</RelativeLayout>

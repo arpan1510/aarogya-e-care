@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AppInfoActivity"
+    >
+
+<!--    <com.google.android.material.navigation.NavigationView-->
+<!--        android:id="@+id/nav_view"-->
+<!--        android:layout_width="300dp"-->
+<!--        android:layout_height="match_parent"-->
+<!--        app:layout_constraintBottom_toBottomOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:menu="@menu/main_menu"-->
+<!--        app:itemTextAppearance="@style/Font"-->
+<!--        android:layout_gravity = "start"-->
+<!--        app:itemTextColor="#000000" />-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <include
+            android:id="@+id/includeToll"
+            layout="@layout/simple_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="65dp"
+            app:layout_constraintTop_toBottomOf="@+id/includeToll">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/app_info_heading"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/questrial_regular"
+                        android:gravity="center"
+                        android:text="About Aarogya E Care"
+                        android:textColor="#000000"
+                        android:textSize="24dp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.049"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/app_info_about"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:gravity="center_horizontal"
+                        android:padding="5dp"
+                        android:text="Aarogya E Care App is made to protect\n your family's health. Whenever you need\n to see your old medical records, open\n Aarogya E Care app and get the previous\n records any time from any where.\n\n Two exciting features are coming soon :\n 1) Consult a Doctor\n 2) Order Medicines\n\nYou will now always stay protected\n because your companion Aarogya E Care\n App will always be there for you."
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/app_info_heading" />
+
+                    <TextView
+                        android:id="@+id/app_info_instruction"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginRight="10dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="Click on the link given below\n to visit our Official Website."
+                        android:textColor="#000000"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/app_info_about" />
+
+                    <TextView
+                        android:id="@+id/app_info_web_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="10dp"
+                        android:fontFamily="@font/roboto_black"
+                        android:gravity="center"
+                        android:text="https://www.aarogyaecare.com/"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/app_info_instruction" />
+
+                    <TextView
+                        android:id="@+id/app_info_terms_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="0dp"
+                        android:background="@drawable/linearbtn"
+                        android:fontFamily="@font/roboto_black"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="@string/terms_conditions"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/app_info_web_link" />
+
+                    <TextView
+                        android:id="@+id/app_info_privacy_link"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:background="@drawable/linearbtn"
+                        android:fontFamily="@font/roboto_black"
+                        android:foreground="?android:attr/selectableItemBackground"
+                        android:gravity="center"
+                        android:padding="12dp"
+                        android:text="Privacy Policy"
+                        android:textColor="@color/white"
+                        android:textSize="14dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/app_info_terms_link" />
+                </LinearLayout>
+            </ScrollView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <!--    <LinearLayout-->
+        <!--        android:layout_width="match_parent"-->
+        <!--        android:layout_height="30dp"-->
+        <!--        android:layout_marginTop="30dp"-->
+        <!--        android:gravity="center_horizontal"-->
+        <!--        android:layout_marginStart="10dp"-->
+        <!--        android:layout_marginEnd="10dp"-->
+        <!--        app:layout_constraintEnd_toEndOf="parent"-->
+        <!--        app:layout_constraintStart_toStartOf="parent"-->
+        <!--        app:layout_constraintTop_toBottomOf="@+id/app_info_web_link">-->
+        <!--                <TextView-->
+        <!--                    android:id="@+id/app_info_terms_conditions_link"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Terms and Conditions"-->
+        <!--                    android:fontFamily="@font/ubuntu_bold"-->
+        <!--                    android:textSize="20sp"-->
+        <!--                    android:textColor="@color/colorPrimary">-->
+        <!--                </TextView>-->
+        <!--                <TextView-->
+        <!--                    android:layout_below="@id/app_info_terms_conditions_link"-->
+        <!--                    android:layout_width="wrap_content"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="and"-->
+        <!--                    android:textSize="20sp"-->
+        <!--                    android:textColor="#000000"-->
+        <!--                    android:fontFamily="@font/ubuntu_light"-->
+        <!--                    android:layout_marginStart="10dp"-->
+        <!--                    android:layout_marginEnd="10dp">-->
+        <!--                </TextView>-->
+
+        <!--                <TextView-->
+        <!--                    android:id="@+id/app_info_privacy_policy"-->
+        <!--                    android:layout_width="match_parent"-->
+        <!--                    android:layout_height="wrap_content"-->
+        <!--                    android:text="Privacy Policy"-->
+        <!--                    android:fontFamily="@font/ubuntu_bold"-->
+        <!--                    android:textColor="@color/colorPrimary"-->
+        <!--                    android:textSize="20sp">-->
+        <!--                </TextView>-->
+
+        <!--    </LinearLayout>-->
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

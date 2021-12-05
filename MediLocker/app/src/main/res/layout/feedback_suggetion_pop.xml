@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="360dp"
+    android:layout_height="360dp"
+    android:layout_gravity="center"
+    android:background="@drawable/pop_bg">
+
+    <LinearLayout
+        android:id="@+id/pop_heading_feed_suggest"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:padding="5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Feedback And Suggestion"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_margin="5dp">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/pop_feed_suggest_cancle"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/pop_bg"
+            android:gravity="center"
+            android:text="X"
+            android:textColor="@color/colorPrimaryDark"
+            android:textSize="35sp"
+            android:textStyle="bold">
+
+        </TextView>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/pop_feed_suggest_edit_text"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="44dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edit_textview_bg"
+        android:hint="Give your Valueable Feedback and Suggestion "
+        android:padding="8dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_heading_feed_suggest"
+        android:fontFamily="sans-serif-smallcaps">
+
+    </EditText>
+
+    <Button
+        android:id="@+id/save_feed_suggestion_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_marginBottom="60dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="@drawable/bt_bg"
+        android:text="Save"
+        android:textColor="#ffff"
+        android:textSize="25sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pop_feed_suggest_edit_text"
+        app:layout_constraintVertical_bias="0.5"
+        android:onClick="save_feed_sugg_fn"/>
+
+    <!--    <ImageView-->
+<!--        android:id="@+id/orderMedicines_cardView"-->
+<!--        android:layout_width="196dp"-->
+<!--        android:layout_height="172dp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toTopOf="parent"-->
+<!--        app:srcCompat="@drawable/order_medicin_pop" />-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/coming_soon02"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:textStyle="bold"-->
+<!--        android:textSize="25sp"-->
+<!--        android:layout_marginTop="36dp"-->
+<!--        android:text="Coming Soon!!"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.501"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/orderMedicines_cardView"-->
+<!--        android:gravity="center"-->
+<!--        android:textColor="@color/colorPrimaryDark"/>-->
+
+<!--    <TextView-->
+<!--        android:id="@+id/description02"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginTop="16dp"-->
+<!--        android:gravity="center"-->
+<!--        android:padding="2dp"-->
+<!--        android:text="Get the medicines to the nearest medical fast."-->
+<!--        android:textColor="#000000"-->
+<!--        android:textSize="17sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.0"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/coming_soon02"-->
+<!--        android:layout_margin="5dp"/>-->
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,153 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_frame"
+    android:layout_width="330dp"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/cancel"
+        android:layout_marginBottom="12dp"
+        android:layout_gravity="center"
+        android:visibility="gone"/>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="title"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="24dp"
+        android:layout_marginBottom="8dp"/>
+
+    <TextView
+        android:id="@+id/subtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:text="subtitle"
+        android:gravity="center"
+        android:visibility="gone"
+        android:textSize="16dp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="#998FA2"/>
+
+    <EditText
+        android:id="@+id/first_edit_text"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/input2"
+        android:hint="text"
+        android:visibility="gone"
+        android:inputType="text"
+        android:padding="15dp"
+        android:fontFamily="@font/roboto_black"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+    <EditText
+        android:id="@+id/second_edit_text"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:background="@drawable/edit_text_background"
+        android:hint="text"
+        android:fontFamily="@font/roboto_black"
+        android:visibility="gone"
+        android:inputType="text"
+        android:paddingBottom="14dp"
+        android:paddingLeft="20dp"
+        android:paddingTop="14dp"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16dp" />
+
+    <EditText
+        android:id="@+id/large_edit_text"
+        android:layout_width="280dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="28dp"
+        android:layout_marginRight="28dp"
+        android:gravity="top"
+        android:visibility="gone"
+        android:fontFamily="@font/roboto_black"
+        android:background="@drawable/input2"
+        android:hint="text"
+        android:padding="15dp"
+        android:textColor="@color/white"
+        android:textColorHint="#ffffff"
+        android:layout_marginBottom="20dp"
+        android:layout_marginTop="10dp"
+        android:textSize="16sp" />
+
+
+
+    <TextView
+        android:id="@+id/first_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="button 1"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="15dp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:fontFamily="@font/roboto_black"
+        android:visibility="gone"
+        android:background="@drawable/linearbtn"/>
+
+    <TextView
+        android:id="@+id/second_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="button 2"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="17dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/second_button_background"/>
+    <TextView
+        android:id="@+id/third_button"
+        android:layout_width="280dp"
+        android:layout_height="wrap_content"
+        android:text="button 3"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="17dp"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="25dp"
+        android:textColor="@color/white"
+        android:visibility="gone"
+        android:background="@drawable/third_button_background"/>
+
+</LinearLayout>

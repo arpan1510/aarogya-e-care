@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+<!--    <group android:checkableBehavior="single">-->
+<!--        <item-->
+<!--            android:id="@+id/nav_dashboard"-->
+<!--            android:title="Dashboard"-->
+<!--            android:icon="@drawable/ic_dashboard"-->
+<!--            />-->
+<!--    </group>-->
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_add_family"
+            android:title="Add Family Member"
+            android:icon="@drawable/ic_add_circle_black_24dp"
+            />
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_sharedwithme"
+            android:title="Shared With Me"
+            android:icon="@drawable/ic_folder_shared"
+            />
+    </group>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_sharedbyme"
+            android:title="Shared By Me"
+            android:icon="@drawable/ic_share_blue_24dp"
+            />
+    </group>
+    <!--            <group android:checkableBehavior="single">-->
+    <!--                <item-->
+    <!--                    android:id="@+id/nav_app_info"-->
+    <!--                    android:title="App Information"-->
+    <!--                    android:icon="@drawable/ic_app_info"-->
+    <!--                    />-->
+    <!--            </group>-->
+    <!--            <group android:checkableBehavior="none">-->
+    <!--            <item-->
+    <!--                android:id="@+id/nav_feed_suggest"-->
+    <!--                android:title="Feedback and Suggestions"-->
+    <!--                android:icon="@drawable/ic_feedback"/>-->
+
+    <!--            <item-->
+    <!--                android:id="@+id/nav_invite_friend"-->
+    <!--                android:title="Invite Friends"-->
+    <!--                android:icon="@drawable/ic_invite_friends"/>-->
+    <!--            </group>-->
+
+
+
+            <group android:checkableBehavior="none">
+
+                <item
+                    android:id="@+id/nav_setting"
+                    android:title="Edit Profile"
+                    android:icon="@drawable/ic_settings"/>
+
+            </group>
+
+    <group android:checkableBehavior="none">
+
+        <item
+            android:id="@+id/nav_payment"
+            android:title="Payment History"
+            android:icon="@drawable/ic_payment_purple_24dp"/>
+
+    </group>
+            <group android:checkableBehavior="none">
+                <item
+                    android:id="@+id/nav_logout"
+                    android:title="Signout"
+                    android:icon="@drawable/ic_logout"/>
+            </group>
+
+
+
+
+
+</menu>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "867792269521",
+    "firebase_url": "https://aarogyaecare19.firebaseio.com",
+    "project_id": "aarogyaecare19",
+    "storage_bucket": "aarogyaecare19.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867792269521:android:c94e075267ea31a6bdd5f0",
+        "android_client_info": {
+          "package_name": "com.operationsmiley.aarogyaecare"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867792269521-vto92sv9qms90c3adhhgqpd183ehkndt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.operationsmiley.aarogyaecare",
+            "certificate_hash": "26c2d39e747c50fe4dad4d2fd6d0ed47e23e07e2"
+          }
+        },
+        {
+          "client_id": "867792269521-q4pccpdfsd3lrfd5vsemgoq93hbkfbjv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD7Er3PBgC0WwV3zz7aYKVPoigspAguTMw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867792269521-q4pccpdfsd3lrfd5vsemgoq93hbkfbjv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

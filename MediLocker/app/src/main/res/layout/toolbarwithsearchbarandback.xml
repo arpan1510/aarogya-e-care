@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:src="http://schemas.android.com/tools"
+    android:id="@+id/simple_toolbar_recordsshow"
+    app:navigationIcon="@drawable/arrow_back_white"
+    android:background="#fff"
+    android:padding="0dp"
+    android:elevation="15dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/textsharedbb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="Shared with me"
+            android:fontFamily="@font/roboto_black"
+            android:textColor="#000"
+
+            android:textSize="20dp"/>
+
+
+        <ImageView
+            android:id="@+id/searchbtnbb"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:src="@drawable/ic_search_black_24dp"/>
+        <ImageView
+            android:id="@+id/cancelbtnbb"
+            android:visibility="gone"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:src="@drawable/ic_cancel_black_24dp"/>
+
+    </RelativeLayout>
+
+</androidx.appcompat.widget.Toolbar>
